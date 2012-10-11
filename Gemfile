@@ -9,6 +9,8 @@ gem 'pg'
 
 gem 'devise'
 
+gem "private_pub"
+
 gem 'activeadmin'
 
 # Gems used only for assets and not required
