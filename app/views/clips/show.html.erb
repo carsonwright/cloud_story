@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Take:</b>
+  <%= @clip.take_id %>
+</p>
+
+<p>
+  <b>Character:</b>
+  <%= @clip.character_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @clip.user_id %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @clip.content %>
+</p>
+
+<p>
+  <b>Trim start:</b>
+  <%= @clip.trim_start %>
+</p>
+
+<p>
+  <b>Trim end:</b>
+  <%= @clip.trim_end %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @clip.state %>
+</p>
+
+
+<%= link_to 'Edit', edit_clip_path(@clip) %> |
+<%= link_to 'Back', clips_path %>

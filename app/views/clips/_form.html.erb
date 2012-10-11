@@ -1,0 +1,45 @@
+<%= form_for(@clip) do |f| %>
+  <% if @clip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@clip.errors.count, "error") %> prohibited this clip from being saved:</h2>
+
+      <ul>
+      <% @clip.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :take_id %><br />
+    <%= f.number_field :take_id %>
+  </div>
+  <div class="field">
+    <%= f.label :character_id %><br />
+    <%= f.number_field :character_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </div>
+  <div class="field">
+    <%= f.label :trim_start %><br />
+    <%= f.time_select :trim_start %>
+  </div>
+  <div class="field">
+    <%= f.label :trim_end %><br />
+    <%= f.time_select :trim_end %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

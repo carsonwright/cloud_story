@@ -1,4 +1,6 @@
 CloudStory::Application.routes.draw do
+  resources :clips
+
   root :to => "home#index"
 
   devise_for :users

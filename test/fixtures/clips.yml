@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  take_id: 1
+  character_id: 1
+  user_id: 1
+  content: MyText
+  trim_start: 2012-10-11 02:10:56
+  trim_end: 2012-10-11 02:10:56
+  state: MyString
+
+two:
+  take_id: 1
+  character_id: 1
+  user_id: 1
+  content: MyText
+  trim_start: 2012-10-11 02:10:56
+  trim_end: 2012-10-11 02:10:56
+  state: MyString
