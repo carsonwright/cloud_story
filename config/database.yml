@@ -18,6 +18,7 @@ development:
   database: cloud_story_development
   pool: 5
   host: localhost
+  min_messages: error
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,6 +44,7 @@ test:
   database: cloud_story_test
   pool: 5
   host: localhost
+  min_messages: error
 
 production:
   adapter: postgresql
@@ -50,3 +52,4 @@ production:
   database: cloud_story_production
   pool: 5
   host: localhost
+  min_messages: error
