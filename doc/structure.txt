@@ -1,0 +1,60 @@
+
+User
+  -name
+  -email
+  -etc...
+
+Role
+  -user_id
+  -story_id
+  -role_type
+
+Story
+  -title
+  -description
+  -etc...
+
+Chapter
+  -story_id
+  -title
+  -description
+  -etc...
+
+Scene
+  -chapter_id
+  -parent_id - Links to the previous scene
+  -child_id - Links to the next scene
+  -title
+  -description
+  -abstract
+  -etc...
+
+Take
+  -scene_id
+  -sequence - Holds the take number for the scene i.e. Take 1, Take 2
+
+Clip
+  -take_id
+  -character_id - Holds the id of the character the user was when he created the clip
+  -user_id - Combines with character_id to form a user compound key
+  -content - The clips text
+  -state - The type of clip that it is
+  -trim_start
+  -trim_end
+
+Note
+  -notable_id
+  -notable_type - Suppoorts polymorphic use of notes for clips, characters, etc...
+  -content
+
+Character
+  -user_id - Characters belong to a user
+  -name
+  -details
+  -etc...
+
+Storyline
+  -story_id
+  -clip_id
+  -parent_id - Links to the previous storyline element
+  -child_id - Links to the next storyline element
